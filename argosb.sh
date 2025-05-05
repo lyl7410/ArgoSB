@@ -761,7 +761,7 @@ upload_to_gist() {
     # Read Gist ID and GitHub Token from environment variables
     GIST_ID_FROM_ENV="${GIST_ID:-}"           # Read GIST_ID or default to empty
     GITHUB_TOKEN_FROM_ENV="${GITHUB_TOKEN:-}" # Read GITHUB_TOKEN or default to empty
-    GIST_FILENAME="argo_nodes_${hostname}.txt" # Filename within the Gist (make unique per host)
+    GIST_FILENAME="aggregated_nodes.txt" # Filename within the Gist (make unique per host)
 
     # Initialize response_code to indicate skipped state initially
     gist_response_code="skipped" # Possible values: skipped, 200 (success), other HTTP codes (failure)
